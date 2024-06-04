@@ -35,7 +35,7 @@ public class LList {
 
         // list.forEach(element -> System.out.println(element));
         list.forEach(System.out::println);
-
+        list.stream().filter(e -> e%2 ==0).forEach(System.out::println);
         // Java 8 features
     }
 }
