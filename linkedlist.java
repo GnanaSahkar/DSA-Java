@@ -12,7 +12,7 @@ public class linkedlist {
     public static linkedlist insert(linkedlist list, int data) {
         Node mynode = new Node(data);
 
-        // no data is inside the linked list
+        
         if(list.head == null) {
             list.head = mynode;
         } else {
