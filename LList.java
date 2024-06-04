@@ -18,9 +18,7 @@ public class LList {
             System.out.println(i);
         }
 
-        for (int i = 0; i < args.length; i++) {
-            System.out.println(list.get(i));
-        }
+        
 
         int count = 0;
         while (count < list.size()) {
@@ -34,8 +32,15 @@ public class LList {
         }*/
 
         // list.forEach(element -> System.out.println(element));
-        list.forEach(System.out::println);
-        list.stream().filter(e -> e%2 ==0).forEach(System.out::println);
+        //list.forEach(System.out::println);
+        //list.stream().filter(e -> e%2 ==0).forEach(System.out::println);
         // Java 8 features
+
+    for (int i = 0; i < list.size(); i++) {
+        System.out.println(list.get(i));
+       }
+
+       
+       
     }
 }
