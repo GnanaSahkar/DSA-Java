@@ -15,6 +15,7 @@ public class reverseList {
         list.add(5);
         list.add(-7);
         list.add(-6);
+        list.add(-12);
 
         System.out.println("NormalList");
         for (Integer integer : list) {
