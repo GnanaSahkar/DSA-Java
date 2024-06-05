@@ -1,5 +1,6 @@
 interface in {
     void walk();
+    
 }
 
 class inner implements in {
@@ -7,6 +8,8 @@ class inner implements in {
     public void walk() {
         System.out.println("walking");
     }
+    
+
 }
 
 public class lamb {
