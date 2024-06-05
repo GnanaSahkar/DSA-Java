@@ -1,7 +1,5 @@
 import java.util.LinkedList;
 
-import java.util.LinkedList;
-
 public class LList {
     public static void main(String[] args) {
         //initialise
