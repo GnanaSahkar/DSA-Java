@@ -1,6 +1,5 @@
 package Asessment;
-
-import java.util.*;
+import java.util.LinkedList;
 
 public class deleteEliment {
     public static void main(String[] args) {
