@@ -1,3 +1,4 @@
+
 public class linkedlist {
     Node head;
     static class Node {
@@ -12,7 +13,6 @@ public class linkedlist {
     public static linkedlist insert(linkedlist list, int data) {
         Node mynode = new Node(data);
 
-        
         if(list.head == null) {
             list.head = mynode;
         } else {
@@ -44,5 +44,24 @@ public class linkedlist {
         list = insert(list, 70);
 
         printList(list);
+
+        list = reverse(list);
+        System.out.println();
+        printList(list);
+    }
+
+    public static linkedlist reverse(linkedlist list){
+        Node prev = null;
+        Node currNode = list.head;
+        Node next = null;
+        while(currNode != null){
+            next = currNode.next;
+            currNode.next = prev;
+            prev = currNode;
+            currNode = next;
+        }
+
+        list.head = prev;
+        return list;
     }
 }
